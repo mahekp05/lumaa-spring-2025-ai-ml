@@ -55,7 +55,7 @@ def recommend_dramas(user_query, num_recommendations=5):
     similarity = cosine_similarity(queryVector, tfidf_matrix).flatten()
     recommended_indices = similarity.argsort()[-num_recommendations:][::-1]
     recommendations = data.iloc[recommended_indices][["Rank", "Name", "Genre", "Rating"]]
-    return recommendations, similarity
+    return recommendations
 
 # gather user input
 def user_input():
@@ -63,15 +63,14 @@ def user_input():
     return query
 
 def output(userQuery):
-    recommended_dramas, similarity = recommend_dramas(userQuery)
+    recommended_dramas = recommend_dramas(userQuery)
 
     if isinstance(recommended_dramas, str):  # If error message is returned
         print(recommended_dramas)
     else:
         print("\nTop recommended dramas:")
         for i, row in enumerate(recommended_dramas.itertuples(), start=1):
-            similarity_percentage = round(similarity[row.Index] * 100, 2)
-            print(f"{i}. {row.Name} {similarity_percentage}%")
+            print(f"{i}. {row.Name}")
 
 data["combined text"] = (
     data["Synopsis"] + " " + 

@@ -1,1 +1,5 @@
-pandas numpy nltk seaborn scikit-learn
+pandas
+numpy
+nltk
+seaborn
+scikit-learn

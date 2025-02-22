@@ -11,8 +11,9 @@ Python version used: 3.13
    `python -m venv myenv`
 2. Download all the necessary packages
    `pip install -r dependencies.txt`
+   Update pip if necessary: `python.exe -m pip install --upgrade pip`
 3. Run your code
    `python main.py`
 4. Results
-   (need to include ss here)
+   ![alt text](exampleQuery.png)
    
