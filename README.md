@@ -19,4 +19,6 @@ Python version used: 3.13
    `python main.py`
 4. Results
    ![alt text](exampleQuery.png)
-   
+
+## Salary Expectations
+Around $4000
