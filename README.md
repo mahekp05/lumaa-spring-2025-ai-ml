@@ -2,7 +2,10 @@
 
 ## Overview
 An k-drama reccomendation system built using natural langauge processing technqiues. The system reccomends you the top 5 kdramas that match the preference you give the system. 
+
 An example of an request: "Romantic comedy with strong friendships love story humorous strong bond companionship"
+
+
 The dataset was pulled from: https://www.kaggle.com/datasets/chanoncharuchinda/top-100-korean-drama-mydramalist . It can be directly downloaded from the site attached or from under the `Dataset` folder, file name: `top100_kdrama`
 
 ## Environment Set-up
